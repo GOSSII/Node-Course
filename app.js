@@ -1,10 +1,9 @@
-const fs = require('fs')
+const readNote = require('./notes.js')
+const sum = require('./utils.js')
 
-// fs.writeFileSync('note.txt', 'My name is Dipesh.')
+const total = sum(4, -2)
 
-// fs.appendFileSync('note.txt', 'I welcome all you to my Node Learning Course');
+console.log("Total " + total);
+console.log(readNote());
 
-fs.readFileSync('note')
 
-var contents = fs.readFileSync('/note.txt', 'utf8');
-console.log(contents);
